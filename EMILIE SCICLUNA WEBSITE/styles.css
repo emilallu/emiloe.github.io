@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-color: #5996ad;
+    font-family: 'Lexend', sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+    position: relative; /* Add position relative to contain absolutely positioned elements */
+}
+
+h1, .p1, .p2, .p3, .p4, .p5 {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    color: #e7e5d5;
+    font-size: 55px;
+}
+
+.p1, .p2 {
+    color: #e7e7e5;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.p2 {
+    margin-top: 20px;
+}
+
+.p3, .p4, .p5 {
+    color: #e7e7e5;
+    font-size: 17px;
+    margin-top: 28px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 600px;
+    height: auto;
+    border: 2px solid #568ca0;
+    border-radius: 10px;
+}
+
+.p6-p7-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px; /* Set the width to match the image container */
+    margin: 20px auto 0 auto; /* Center the container and add top margin */
+}
+
+.p6, .p7 {
+    color: #e7e7e5;
+    font-size: 20px;
+}
+
+.p8 {
+    color: #e7e7e5;
+    font-size: 20px;
+    margin-top: 20px; /* Add margin to separate from the previous content */
+    /* Additional styling if needed */
+    position: relative;
+    z-index: 2;
+}
+
+a {
+    color: #9fbdd1; /* Change the color to your desired color */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline when hovering over the link */
+}
+
+.outline-square {
+    width: 570px;
+    height: 220px;
+    border: 4px solid #568ca0;
+    border-radius: 10px;
+    pointer-events: none;
+    background-color: #568ca0;
+    z-index: 1;
+    position: absolute; /* Use absolute positioning within the relative container */
+    top: 20px; /* Adjust the top position to control vertical placement */
+    left: 50%;
+    transform: translateX(-50%);
+}
